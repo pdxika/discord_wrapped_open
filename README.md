@@ -73,12 +73,12 @@ These use Claude to analyze conversation content. Requires an Anthropic API key.
 |---|---|---|
 | **Phoebe Bridgers Award** | 🎵 | Biggest emotional swings (emotional motion sickness) |
 | **Bunny Lebowski Award** | 🎳 | Most nihilistic or cynical voice |
-| **Breck Garrett Award** | ☀️ | Most relentlessly positive (toxic positivity) |
+| **Alex Stephenson Award** | ☀️ | Most relentlessly positive (toxic positivity) |
 | **Gen Z Award** | 📱 | Most Gen Z language and references |
 | **Boomer Award** | 📰 | Most Boomer energy |
 | **Taylor Swift Award** | 🎤 | Best at foreshadowing (hinting before revealing) |
 | **2001: A Space Odyscord** | 🚀 | Most growth + old soul/youthful paradox |
-| **Jeff Toole Award** | 🏷️ | Most tagged/mentioned by others |
+| **Jeff Burroughs Award** | 🏷️ | Most tagged/mentioned by others |
 | **Die Hard Award** | 💥 | Most Bruce Willis energy (resilient, sarcastic) |
 | **Secretary of Holidays** | 🎄 | Most holiday mentions across the year |
 | **HER Award** | 💻 | Most digital-to-real-life manifestations |
