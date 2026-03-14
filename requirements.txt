@@ -1,13 +1,23 @@
-discord.py
-aiohttp
-aiofiles
-emoji
-matplotlib
-pandas
-seaborn
-openai
-flask
-discord.py==2.3.2
-anthropic
+# Core
+flask>=2.0.0
 flask-cors
 python-dotenv
+pandas
+pyyaml
+
+# Discord export
+discord.py>=2.3.0
+aiohttp
+aiofiles
+
+# Analysis
+emoji
+matplotlib
+seaborn
+
+# LLM features (optional — only needed if using Anthropic API)
+anthropic
+
+# Embeddings / 3D visualization (optional — only needed for vector space feature)
+# sentence-transformers
+# scikit-learn
