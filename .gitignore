@@ -1,0 +1,84 @@
+# Discord Wrapped - User config and data
+config.yaml
+.env
+.env.local
+
+# Discord export (large, contains personal data)
+discord_messages.json
+discord_export_*.json
+
+# Analysis outputs (generated, contains personal data)
+output/
+roasts_cache.json
+titles_cache.json
+voice_guide_output.json
+voice_guide_output.md
+
+# Frontend generated data
+wrapped-frontend/src/data/wrapped_data.json
+wrapped-frontend/public/vector_data.json
+
+# Personal analysis files
+*_analysis.txt
+*_voice_analysis.txt
+
+# Log files
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+*.mo
+*.pot
+.venv
+venv/
+env/
+ENV/
+
+# Node
+node_modules/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

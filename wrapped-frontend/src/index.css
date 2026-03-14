@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-900 text-white font-sans;
+  }
+}
+
+@layer components {
+  .card-gradient {
+    @apply bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-sm;
+  }
+
+  .story-slide {
+    @apply min-h-screen flex items-center justify-center p-8;
+  }
+
+  .stat-card {
+    @apply bg-white/10 rounded-xl p-6 backdrop-blur-md border border-white/20;
+  }
+}

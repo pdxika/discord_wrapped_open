@@ -1,0 +1,13 @@
+discord.py
+aiohttp
+aiofiles
+emoji
+matplotlib
+pandas
+seaborn
+openai
+flask
+discord.py==2.3.2
+anthropic
+flask-cors
+python-dotenv

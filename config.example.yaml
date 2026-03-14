@@ -1,0 +1,56 @@
+# Discord Wrapped Configuration
+# Copy this file to config.yaml and fill in your values.
+
+server:
+  # Your Discord server's display name
+  name: "My Server"
+  # Your Discord server (guild) ID
+  # Find it: Discord Settings > Advanced > Enable Developer Mode, then right-click your server name > Copy Server ID
+  guild_id: "YOUR_GUILD_ID_HERE"
+
+# Map Discord usernames to display names
+# Add every member you want included in the Wrapped experience
+# Format: discord_username: "Display Name"
+users:
+  example_user_1: "Alice"
+  example_user_2: "Bob"
+  example_user_3: "Charlie"
+
+# Channel IDs to export messages from
+# Find them: Enable Developer Mode in Discord, right-click a channel > Copy Channel ID
+channels:
+  - 123456789012345678
+  - 234567890123456789
+
+# Export settings
+export:
+  days: 365  # How many days of message history to export
+
+# Optional: Inside joke keywords to track
+# The system will count mentions and build timelines for these phrases
+inside_jokes: []
+  # - "some recurring phrase"
+  # - "another inside joke"
+
+# Optional: Custom keyword-based awards
+# The system counts who uses these keywords most and generates an award
+custom_keyword_trackers: []
+  # - name: "Sports Fanatic"
+  #   keywords: ["touchdown", "goal", "slam dunk"]
+  #   emoji: "🏈"
+
+# Chat bot persona name (shown in the Oracle tab)
+bot_persona_name: "ServerBot"
+
+# Optional feature toggles
+features:
+  embeddings: true    # 3D/2D message clustering (requires sentence-transformers, ~2GB download)
+  synesthesia: true   # Color association analysis (requires LLM)
+  chatbot: true       # Interactive Oracle chatbot (requires LLM)
+  bechdel: false      # Bechdel test analysis (requires gender config, see below)
+
+# LLM settings (for personality reads, awards, roasts, chatbot)
+llm:
+  enabled: true
+  # Model to use for analysis. Recommended: claude-sonnet-4-20250514
+  model: "claude-sonnet-4-20250514"
