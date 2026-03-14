@@ -1,6 +1,10 @@
 # Discord Wrapped
 
-A **Spotify Wrapped-style experience** for your Discord server. Analyze a year of chat data and generate personalized stats, awards, and insights for every member.
+Last fall, I designed a completely LLM-driven, multimedia **Spotify Wrapped-style experience** for my Discord server. I wrote about it here: https://substack.com/home/post/p-185254067
+
+Most of the fun of this is that it is a reflection, uniquely, of your server. So while the instructions below are very generic, the outputs should not be! 
+
+The tool will help you analyze a year of chat data and generate personalized stats, awards, and insights for every member.
 
 ![Python](https://img.shields.io/badge/Python-3.11+-blue) ![React](https://img.shields.io/badge/React-18-61dafb) ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6) ![License](https://img.shields.io/badge/License-MIT-green)
 
