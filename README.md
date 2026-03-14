@@ -8,103 +8,40 @@ The tool will help you analyze a year of chat data and generate personalized sta
 
 ![Python](https://img.shields.io/badge/Python-3.11+-blue) ![React](https://img.shields.io/badge/React-18-61dafb) ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6) ![License](https://img.shields.io/badge/License-MIT-green)
 
-<!-- Add your own screenshots here! See the Screenshots section below. -->
-<!-- ![Dashboard Preview](screenshots/dashboard.png) -->
+![Dashboard Preview](screenshots/dashboard.png)
 
 ---
 
 ## Features
 
-### Story Mode
-An animated, Spotify Wrapped-style slideshow that walks through your server's year — total messages, peak days, and a personalized card for every member.
-
-```
-┌──────────────────────────────────────────┐
-│                                          │
-│           Your Year in Review            │
-│                                          │
-│          ╔══════════════════╗             │
-│          ║   142,837        ║             │
-│          ║   messages sent  ║             │
-│          ║                  ║             │
-│          ║   327 active     ║             │
-│          ║   days           ║             │
-│          ╚══════════════════╝             │
-│                                          │
-│              ● ● ○ ○ ○ ○                 │
-│                                          │
-│            [ Next → ]                    │
-└──────────────────────────────────────────┘
-```
-
 ### Dashboard
-The main hub with server stats, leaderboards, awards, and personal profiles.
+The main hub — hero stats, leaderboards, reaction magnets, dynamic duos, and weekly activity chart all at a glance.
 
-```
-┌──────────────────────────────────────────────────────────┐
-│  Stats    Timeline    Galaxy    Vectorized    Oracle     │
-├──────────────────────────────────────────────────────────┤
-│                                                          │
-│  ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌─────────┐       │
-│  │ 142,837 │ │  11     │ │ Mar 15  │ │ 10pm    │       │
-│  │ messages│ │ members │ │ busiest │ │ loudest │       │
-│  └─────────┘ └─────────┘ └─────────┘ └─────────┘       │
-│                                                          │
-│  TOP TALKERS          DYNAMIC DUOS                       │
-│  ┌──────────────┐     ┌────────────────────────┐        │
-│  │ 1. Jake  15k │     │ Jake ↔ Sarah    1,247  │        │
-│  │ 2. Sarah 12k │     │ Mike ↔ Jake       983  │        │
-│  │ 3. Mike   9k │     │ Sarah ↔ Alex      871  │        │
-│  └──────────────┘     └────────────────────────┘        │
-│                                                          │
-│  AWARDS                                                  │
-│  ┌──────────┐ ┌──────────┐ ┌──────────┐                │
-│  │ 🦉       │ │ 🐦       │ │ 😂       │                │
-│  │Night Owl │ │Early Bird│ │ Emoji    │                │
-│  │  Jake    │ │  Sarah   │ │ Champion │                │
-│  │          │ │          │ │  Mike    │                │
-│  └──────────┘ └──────────┘ └──────────┘                │
-└──────────────────────────────────────────────────────────┘
-```
+![Dashboard](screenshots/dashboard.png)
+
+### Awards
+Stat-based and LLM-powered awards, automatically computed from your chat data.
+
+![Awards](screenshots/awards.png)
 
 ### Personal Profile Pages
-Click any member to see their detailed stats, personality read, AI roast, best moment, vocabulary, and a yearbook-style message from their #1 conversation partner.
+Click any member to see their detailed stats, AI-generated personality read, personalized roast, best moment, vocabulary, and a yearbook-style message from their #1 conversation partner.
 
-```
-┌──────────────────────────────────────────────────────────┐
-│  ← Back                                                  │
-│                                                          │
-│  ┌────┐  Jake                                           │
-│  │ 🧑 │  "The Connector"                                │
-│  └────┘  "Jake is the glue that holds this server       │
-│           together, but also the one who starts          │
-│           arguments about pizza toppings at 2am."        │
-│                                                          │
-│  ┌─────────┐ ┌──────────┐ ┌──────────────┐             │
-│  │ 15,234  │ │   847    │ │ Tuesdays     │             │
-│  │ messages│ │reactions │ │ @ 10pm       │             │
-│  └─────────┘ └──────────┘ └──────────────┘             │
-│                                                          │
-│  SIGNATURE TRAITS                                        │
-│  • Conversation starter who pulls people in              │
-│  • Late-night philosopher                                │
-│  • Uses "honestly" as a verbal tic                       │
-│                                                          │
-│  BEST MOMENT (23 reactions)                              │
-│  "I just realized we've been arguing about whether       │
-│   a hot dog is a sandwich for THREE YEARS"               │
-│                                                          │
-│  TOP VOCABULARY                                          │
-│  honestly · literally · vibes · chaos · manifesting      │
-│                                                          │
-│  FROM YOUR BESTIE (Sarah):                               │
-│  "Jake is the kind of person who will debate you for     │
-│   an hour and then send you a wholesome meme at 3am."    │
-└──────────────────────────────────────────────────────────┘
-```
+![Profile](screenshots/profile.png)
+![Profile Details](screenshots/profile-details.png)
+
+### Timeline
+"Dischronology" — a month-by-month timeline of your server's year. Expand any month to see key moments and conversations.
+
+![Timeline](screenshots/timeline.png)
 
 ### 3D Galaxy View
 Every high-engagement message plotted in 3D space using sentence embeddings. Messages cluster by topic — hover to read, click to open in Discord.
+
+![Galaxy](screenshots/galaxy.png)
+
+### Story Mode
+An animated, Spotify Wrapped-style slideshow that walks through your server's year — total messages, peak days, and a personalized card for every member.
 
 ### Oracle Chatbot
 An AI that roleplays as your server's sentient consciousness. Ask it anything about your chat history — it has access to every message and can run queries on the fly.
@@ -190,37 +127,6 @@ Every member gets a detailed profile with:
 | **Inside Joke Tracker** | Frequency timelines for recurring phrases (configurable) |
 | **Conversation Patterns** | Topic pivots, callbacks, reply chains |
 | **Timeline Disruption** | "It's a Wonderful Life" — what would the server look like without each person? |
-
----
-
-## Screenshots
-
-> **Add your own screenshots!** After running Discord Wrapped, take screenshots and save them to a `screenshots/` folder.
-
-To add screenshots to this README:
-
-1. Create a `screenshots/` directory in the repo root
-2. Take screenshots of your running app
-3. Uncomment and update the image references below:
-
-```markdown
-### Story Mode
-<!-- ![Story Mode](screenshots/story-mode.png) -->
-
-### Dashboard
-<!-- ![Dashboard](screenshots/dashboard.png) -->
-
-### Personal Profile
-<!-- ![Profile Page](screenshots/profile.png) -->
-
-### 3D Galaxy View
-<!-- ![Galaxy View](screenshots/galaxy.png) -->
-
-### Oracle Chatbot
-<!-- ![Oracle](screenshots/oracle.png) -->
-```
-
-> **Why no default screenshots?** Every server's Wrapped looks different — your data, your members, your vibe. Screenshots from your own server will be more meaningful than generic ones.
 
 ---
 
