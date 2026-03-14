@@ -8,15 +8,221 @@ The tool will help you analyze a year of chat data and generate personalized sta
 
 ![Python](https://img.shields.io/badge/Python-3.11+-blue) ![React](https://img.shields.io/badge/React-18-61dafb) ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6) ![License](https://img.shields.io/badge/License-MIT-green)
 
-## What You Get
+<!-- Add your own screenshots here! See the Screenshots section below. -->
+<!-- ![Dashboard Preview](screenshots/dashboard.png) -->
 
-- **Personal stats** for every member: message counts, peak hours, top emojis, signature words
-- **Awards**: Night Owl, Early Bird, most replies received, conversation starter, and more
-- **LLM-powered features** (optional): personalized roasts, personality reads, AI-generated superlatives
-- **3D vector space** visualization of your server's conversations
-- **Interactive chatbot** that roleplays as your server's sentient AI
-- **Story mode** with animated slides walking through the year
-- **Timeline** of inside jokes and server milestones
+---
+
+## Features
+
+### Story Mode
+An animated, Spotify Wrapped-style slideshow that walks through your server's year — total messages, peak days, and a personalized card for every member.
+
+```
+┌──────────────────────────────────────────┐
+│                                          │
+│           Your Year in Review            │
+│                                          │
+│          ╔══════════════════╗             │
+│          ║   142,837        ║             │
+│          ║   messages sent  ║             │
+│          ║                  ║             │
+│          ║   327 active     ║             │
+│          ║   days           ║             │
+│          ╚══════════════════╝             │
+│                                          │
+│              ● ● ○ ○ ○ ○                 │
+│                                          │
+│            [ Next → ]                    │
+└──────────────────────────────────────────┘
+```
+
+### Dashboard
+The main hub with server stats, leaderboards, awards, and personal profiles.
+
+```
+┌──────────────────────────────────────────────────────────┐
+│  Stats    Timeline    Galaxy    Vectorized    Oracle     │
+├──────────────────────────────────────────────────────────┤
+│                                                          │
+│  ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌─────────┐       │
+│  │ 142,837 │ │  11     │ │ Mar 15  │ │ 10pm    │       │
+│  │ messages│ │ members │ │ busiest │ │ loudest │       │
+│  └─────────┘ └─────────┘ └─────────┘ └─────────┘       │
+│                                                          │
+│  TOP TALKERS          DYNAMIC DUOS                       │
+│  ┌──────────────┐     ┌────────────────────────┐        │
+│  │ 1. Jake  15k │     │ Jake ↔ Sarah    1,247  │        │
+│  │ 2. Sarah 12k │     │ Mike ↔ Jake       983  │        │
+│  │ 3. Mike   9k │     │ Sarah ↔ Alex      871  │        │
+│  └──────────────┘     └────────────────────────┘        │
+│                                                          │
+│  AWARDS                                                  │
+│  ┌──────────┐ ┌──────────┐ ┌──────────┐                │
+│  │ 🦉       │ │ 🐦       │ │ 😂       │                │
+│  │Night Owl │ │Early Bird│ │ Emoji    │                │
+│  │  Jake    │ │  Sarah   │ │ Champion │                │
+│  │          │ │          │ │  Mike    │                │
+│  └──────────┘ └──────────┘ └──────────┘                │
+└──────────────────────────────────────────────────────────┘
+```
+
+### Personal Profile Pages
+Click any member to see their detailed stats, personality read, AI roast, best moment, vocabulary, and a yearbook-style message from their #1 conversation partner.
+
+```
+┌──────────────────────────────────────────────────────────┐
+│  ← Back                                                  │
+│                                                          │
+│  ┌────┐  Jake                                           │
+│  │ 🧑 │  "The Connector"                                │
+│  └────┘  "Jake is the glue that holds this server       │
+│           together, but also the one who starts          │
+│           arguments about pizza toppings at 2am."        │
+│                                                          │
+│  ┌─────────┐ ┌──────────┐ ┌──────────────┐             │
+│  │ 15,234  │ │   847    │ │ Tuesdays     │             │
+│  │ messages│ │reactions │ │ @ 10pm       │             │
+│  └─────────┘ └──────────┘ └──────────────┘             │
+│                                                          │
+│  SIGNATURE TRAITS                                        │
+│  • Conversation starter who pulls people in              │
+│  • Late-night philosopher                                │
+│  • Uses "honestly" as a verbal tic                       │
+│                                                          │
+│  BEST MOMENT (23 reactions)                              │
+│  "I just realized we've been arguing about whether       │
+│   a hot dog is a sandwich for THREE YEARS"               │
+│                                                          │
+│  TOP VOCABULARY                                          │
+│  honestly · literally · vibes · chaos · manifesting      │
+│                                                          │
+│  FROM YOUR BESTIE (Sarah):                               │
+│  "Jake is the kind of person who will debate you for     │
+│   an hour and then send you a wholesome meme at 3am."    │
+└──────────────────────────────────────────────────────────┘
+```
+
+### 3D Galaxy View
+Every high-engagement message plotted in 3D space using sentence embeddings. Messages cluster by topic — hover to read, click to open in Discord.
+
+### Oracle Chatbot
+An AI that roleplays as your server's sentient consciousness. Ask it anything about your chat history — it has access to every message and can run queries on the fly.
+
+---
+
+## Awards
+
+Awards are automatically computed from your server's data. No configuration needed.
+
+### Stat-Based Awards
+These are computed purely from message data — no API key required.
+
+| Award | Emoji | What It Measures |
+|---|---|---|
+| **Night Owl** | 🦉 | Highest % of messages sent between midnight–5am |
+| **Early Bird** | 🐦 | Highest % of messages sent between 5am–7am |
+| **Emoji Champion** | 😂 | Highest emoji-per-message rate |
+| **Question Asker** | ❓ | Highest rate of messages containing "?" |
+| **Caps Lock Enthusiast** | 🔊 | Highest rate of ALL CAPS messages |
+| **Conversation Killer** | 💀 | Sent the message that caused the longest silence |
+| **Aproposter** | 🎲 | Most unpredictable posting patterns (highest variance) |
+| **Katamari Damacy** | 🌍 | Attracted the most unique responders |
+
+### LLM-Powered Awards
+These use Claude to analyze conversation content. Requires an Anthropic API key.
+
+| Award | Emoji | What It Measures |
+|---|---|---|
+| **Phoebe Bridgers Award** | 🎵 | Biggest emotional swings (emotional motion sickness) |
+| **Bunny Lebowski Award** | 🎳 | Most nihilistic or cynical voice |
+| **Breck Garrett Award** | ☀️ | Most relentlessly positive (toxic positivity) |
+| **Gen Z Award** | 📱 | Most Gen Z language and references |
+| **Boomer Award** | 📰 | Most Boomer energy |
+| **Taylor Swift Award** | 🎤 | Best at foreshadowing (hinting before revealing) |
+| **2001: A Space Odyscord** | 🚀 | Most growth + old soul/youthful paradox |
+| **Jeff Toole Award** | 🏷️ | Most tagged/mentioned by others |
+| **Die Hard Award** | 💥 | Most Bruce Willis energy (resilient, sarcastic) |
+| **Secretary of Holidays** | 🎄 | Most holiday mentions across the year |
+| **HER Award** | 💻 | Most digital-to-real-life manifestations |
+
+### Custom Awards
+Define your own keyword-based awards in `config.yaml`:
+
+```yaml
+custom_keyword_trackers:
+  - name: "Sports Fanatic"
+    keywords: ["touchdown", "goal", "slam dunk", "home run"]
+    emoji: "🏈"
+  - name: "Foodie"
+    keywords: ["recipe", "cooking", "restaurant", "delicious"]
+    emoji: "🍕"
+```
+
+---
+
+## Personal Stats
+
+Every member gets a detailed profile with:
+
+| Category | Metrics |
+|---|---|
+| **Volume** | Messages sent, rank, days active, longest streak, longest absence |
+| **Timing** | Most active hour, most active day, night owl %, early bird % |
+| **Style** | Avg message length, emoji rate, question rate, caps rate, edit rate |
+| **Relationships** | Top 3 reply targets, top 3 replied by, mutual bestie |
+| **Best Moment** | Most-reacted message with full context |
+| **Vocabulary** | Top 20 signature words (unique to them vs the group) |
+| **Personality** | AI-generated role, description, and signature traits |
+| **Roast** | AI-generated personalized roast |
+| **Partner Message** | Yearbook-style message from their #1 conversation partner |
+
+---
+
+## Server-Wide Analysis
+
+| Feature | Description |
+|---|---|
+| **Leaderboards** | Top talkers, reaction magnets, most replied to, top repliers |
+| **Dynamic Duos** | Top 10 conversation pairs by reply frequency |
+| **Activity Heatmap** | Hour-by-weekday message density matrix |
+| **Weekly Trends** | Message volume charted week by week |
+| **Inside Joke Tracker** | Frequency timelines for recurring phrases (configurable) |
+| **Conversation Patterns** | Topic pivots, callbacks, reply chains |
+| **Timeline Disruption** | "It's a Wonderful Life" — what would the server look like without each person? |
+
+---
+
+## Screenshots
+
+> **Add your own screenshots!** After running Discord Wrapped, take screenshots and save them to a `screenshots/` folder.
+
+To add screenshots to this README:
+
+1. Create a `screenshots/` directory in the repo root
+2. Take screenshots of your running app
+3. Uncomment and update the image references below:
+
+```markdown
+### Story Mode
+<!-- ![Story Mode](screenshots/story-mode.png) -->
+
+### Dashboard
+<!-- ![Dashboard](screenshots/dashboard.png) -->
+
+### Personal Profile
+<!-- ![Profile Page](screenshots/profile.png) -->
+
+### 3D Galaxy View
+<!-- ![Galaxy View](screenshots/galaxy.png) -->
+
+### Oracle Chatbot
+<!-- ![Oracle](screenshots/oracle.png) -->
+```
+
+> **Why no default screenshots?** Every server's Wrapped looks different — your data, your members, your vibe. Screenshots from your own server will be more meaningful than generic ones.
+
+---
 
 ## Quick Start
 
@@ -117,6 +323,12 @@ This runs all analysis scripts in the correct order:
 5. **Embeddings** *(optional)* — 3D vector space visualization
 6. **Final merge** — combines everything into the frontend data file
 
+Options:
+```bash
+python run_pipeline.py --stats-only       # Skip LLM features
+python run_pipeline.py --skip-embeddings  # Skip 3D visualization
+```
+
 ### 6. Start the App
 
 ```bash
@@ -170,12 +382,14 @@ Open **http://localhost:5173** and enjoy your Wrapped!
 Don't have an Anthropic API key? No problem — you still get:
 
 - All message statistics and visualizations
-- Computed awards (Night Owl, Early Bird, etc.)
+- Stat-based awards (Night Owl, Early Bird, Emoji Champion, etc.)
 - Inside joke tracking and timelines
-- Reply network analysis
+- Reply network analysis and Dynamic Duos
 - Emoji and vocabulary breakdowns
+- Personal stats for every member
+- Story mode slideshow
 
-You'll skip: personality reads, roasts, AI-generated superlatives, the Oracle chatbot, and synesthesia colors.
+You'll skip: personality reads, roasts, LLM-generated awards, the Oracle chatbot, and synesthesia colors.
 
 Just leave `ANTHROPIC_API_KEY` blank in your `.env` and set `llm.enabled: false` in `config.yaml`.
 
